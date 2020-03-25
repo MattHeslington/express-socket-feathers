@@ -2,7 +2,7 @@
     "name": "express-socket-feathers",
     "version": "1.0.0",
     "description": "A real-time App With Feathers.js, Socket.io & Express to allow livestream viewers to suggest project ideas to the streamer in real time.",
-    "main": "index.js",
+    "main": "app.js",
     "scripts": {
         "start": "node app"
     },
