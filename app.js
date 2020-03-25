@@ -33,19 +33,15 @@ const app = express(feathers());
 
 // Parse JSON
 app.use(express.json());
-
-// Configure socket.io realtime APIs
+// Config Socket.io realtime APIs
 app.configure(socketio());
-
 // Enable REST services
 app.configure(express.rest());
-
-// Register service
-app.use("/ides", new IdeaService());
+// Register services
+app.use("/ideas", new IdeaService());
 
 // New connections connect to stream channel
 app.on("connection", conn => app.channel("stream").join(conn));
-
 // Publish events to stream
 app.publish(data => app.channel("stream"));
 
