@@ -1,0 +1,18 @@
+{
+    "name": "express-socket-feathers",
+    "version": "1.0.0",
+    "description": "A real-time App With Feathers.js, Socket.io & Express to allow livestream viewers to suggest project ideas to the streamer in real time.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Matt Heslington",
+    "license": "ISC",
+    "dependencies": {
+        "@feathersjs/express": "^4.5.2",
+        "@feathersjs/feathers": "^4.5.2",
+        "@feathersjs/socketio": "^4.5.2",
+        "moment": "^2.24.0"
+    }
+}
